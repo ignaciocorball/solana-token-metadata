@@ -41,18 +41,18 @@ const baseMetadata: DataV2 = {
 
 1. Clone the repository:
 ```cli
-   git clone https://github.com/ignaciocorball/solana-token-metadata.git
-   cd solana-token-metadata
+git clone https://github.com/ignaciocorball/solana-token-metadata.git
+cd solana-token-metadata
 ```
 2. Install dependencies:
 ```cli
-   npm install
+npm install
 ```
 ## Running the Application
 
 Start the application by executing:
 ```cli
-   npm run start
+npm run start
 ```
 The script will:
 - Load your wallet keypair.
