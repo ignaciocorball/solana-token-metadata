@@ -6,6 +6,8 @@ Update your SPL token metadata on the Solana blockchain using Metaplex.
 
 This project allows you to update the metadata of your SPL token on the Solana blockchain. It validates the configuration, checks that your funding wallet has sufficient SOL (minimum 0.2 SOL), and automatically assigns your wallet as the creator of the token. The script features detailed logging with emojis for an enhanced user experience and robust error handling.
 
+If you find this project useful, please consider giving it a ⭐ star and forking the repository. Your support really helps me continue to improve and maintain this project!
+
 ## Features
 
 - **Validation:** Ensures valid token mint and wallet addresses.
@@ -18,7 +20,6 @@ This project allows you to update the metadata of your SPL token on the Solana b
 
 Before running the script, configure your settings by updating the following code snippet in your project:
 
-```typescript
 // 🌎 Global Configuration
 const endpoint: string = "https://api.mainnet-beta.solana.com"; // Options: mainnet-beta, devnet, testnet
 const tokenMint: string = ""; // Your SPL Token Address
@@ -34,3 +35,37 @@ const baseMetadata: DataV2 = {
     collection: null,
     uses: null,
 };
+
+## Installation
+
+1. Clone the repository:
+   git clone https://github.com/ignaciocorball/solana-token-metadata.git
+   cd solana-token-metadata
+
+2. Install dependencies:
+   npm install
+
+## Running the Application
+
+Start the application by executing:
+
+   npm run start
+
+The script will:
+- Load your wallet keypair.
+- Validate the provided configurations and addresses.
+- Check your wallet's SOL balance.
+- Broadcast a transaction to update the token metadata on the Solana blockchain.
+- Display detailed logs and transaction status.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas or improvements, please fork the repository, create a branch with your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Happy coding! 🚀
